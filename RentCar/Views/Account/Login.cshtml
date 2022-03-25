@@ -1,0 +1,60 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="~/css/login.css">
+
+</head>
+<body>
+
+
+    <section>
+
+        <hgroup>
+            <h1 class="greeting-header">Xoş gəldiniz</h1>
+            <p class="header-body">Zəhmət olmasa hesabınıza daxil olmaq üçün məlumatlarınızı daxil edin</p>
+        </hgroup>
+
+        <form method="post" class="log-form">
+
+            <div class="group log-input">
+                <input type="email" id="email" name="email" placeholder="Email">
+            </div>
+
+            <div class="group log-input">
+                <input type="password" id="password" name="password" placeholder="Şifrə">
+            </div>
+
+            <span class="check left-align">
+                <input id="remember" type="checkbox">
+                <label for="remember">Yadda Saxla</label>
+            </span>
+
+            <a class="right-align" asp-action="Register" asp-controller="Account">Qeydiyyatın yoxdur ?</a>
+
+            <br><br>
+
+            <div class="container-log-btn">
+                <button type="submit" name="btn_submit" class="log-form-btn">
+                    <span>Giriş</span>
+                </button>
+            </div>
+
+        </form>
+
+    </section>
+
+
+
+    <script src="~/js/login.js"></script>
+</body>
+</html>

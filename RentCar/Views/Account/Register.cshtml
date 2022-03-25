@@ -1,0 +1,70 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qeydiyyat</title>
+    <link rel="stylesheet" href="~/css/register.css">
+
+</head>
+<body>
+
+
+    <section>
+
+        <hgroup>
+            <h1 class="greeting-header">Hesab aç</h1>
+        </hgroup>
+
+        <form method="post" class="log-form">
+
+            <div class="group log-input">
+                <input type="text" id="name" name="name" placeholder="Ad">
+            </div>
+
+            <div class="group log-input">
+                <input type="text" id="surname" name="surname" placeholder="Soyad">
+            </div>
+
+            <div class="group log-input">
+                <input type="tel" id="phone" name="phone" placeholder="Telefon nömrəsi">
+            </div>
+
+            <div class="group log-input">
+                <input type="email" id="email" name="email" placeholder="Email">
+            </div>
+
+            <div class="group log-input">
+                <input type="password" id="password" name="password" placeholder="Şifrə">
+            </div>
+
+            <div class="group log-input">
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Şifrə (təkrar)">
+            </div>
+
+            <div class="back-to-login">
+                <a asp-action="Login" asp-controller="Account">Qeydiyyatım artıq var >></a>
+            </div>
+
+
+            <div class="container-log-btn">
+                <button type="submit" name="btn_submit" class="log-form-btn">
+                    <span>Qeydiyyatdan keç</span>
+                </button>
+            </div>
+
+        </form>
+
+    </section>
+
+
+    <script src="~/js/register.js"></script>
+</body>
+</html>
